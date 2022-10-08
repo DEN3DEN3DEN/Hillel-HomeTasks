@@ -90,5 +90,18 @@ if (digitA === digitB && digitA === digitC) {
 }*/
 
 //script 8
+let numberABCDEF = Number(prompt('введите шестизначное число'));
+let digitA = parseInt(numberABCDEF / 100000);
+let digitB = parseInt((numberABCDEF / 10000) % 10);
+let digitC = parseInt((numberABCDEF / 1000) % 10);
+let digitD = parseInt((numberABCDEF / 100) % 10);
+let digitE = parseInt((numberABCDEF / 10) % 10);
+let digitF = parseInt(numberABCDEF % 10);
+
+if (digitA===digitF && digitB===digitE && digitC===digitD) {
+    console.log('это число зеркальное');
+} else {
+    console.log('обычное шестизначное число');
+}
 
 
