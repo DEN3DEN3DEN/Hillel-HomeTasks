@@ -33,41 +33,41 @@ let sport1 = 'Бокс';
 let sport2 = 'Прыжки с шестом';
 let sport3 = 'Футбол'; 
 let sportsman1 = 'Алескандр Усик';
-let sportsman2 = 'Сергей Бубкв';
+let sportsman2 = 'Сергей Бубка';
 let sportsman3 = 'Ефим Конопля';
 
 
 if (yearOfBirth > 0) {
-    alert ('Тебе ' + [age]);
+    alert('Твой возраст - ' + [age] + '!');
 } else if (yearOfBirth === 0) {
-    alert ('Жаль, что вы не захотели ввести свой возрвст');
+    alert('Жаль, что вы не захотели ввести свой возрвст!');
 }
 
-/*if (city === city1) {
-    alert('Ты живешь в столице ' + [country1]);
+if (city === city1) {
+    alert('Ты живешь в столице ' + [country1] + '!');
 } else if (city === city2) {
-    alert ('Ты живешь в столице ' + [country2]);
+    alert('Ты живешь в столице ' + [country2] + '!');
 } else if (city === city3) {
-    alert ('Ты живешь в столице ' + [country3]);
+    alert('Ты живешь в столице ' + [country3] + '!');
 } else if (city) {
-    alert ('Ты живешь в городе ' + [city]);
+    alert('Ты живешь в городе ' + [city] + '!');
 } else {
-    alert ('Жаль, что вы не захотели ввести свой город');
+    alert('Жаль, что вы не захотели ввести свой город!');
 }
 
 if (sport === sport1) {
-    alert ('Круто! Хочешь стать как ' + [sportsman1] + ' ?');
+    alert('Круто! Хочешь стать как ' + [sportsman1] + '?');
 } else if (sport === sport2) {
-    alert ('Круто! Хочешь стать как ' + [sportsman2] + ' ?');
+    alert('Круто! Хочешь стать как ' + [sportsman2] + '?');
 } else if (sport === sport3) {
-    alert ('Круто! Хочешь стать как ' + [sportsman3] + ' ?');
+    alert('Круто! Хочешь стать как ' + [sportsman3] + '?');
 } else if (sport) {
-    alert ('Твой любимый спорт ' + [sport]);
+    alert('Твой любимый спорт ' + [sport] + '!');
 } else {
-    alert ('Жаль, что вы не захотели ввести свой любимый вид спорта');
-}*/
+    alert('Жаль, что вы не захотели ввести свой любимый вид спорта!');
+}
 
-switch (city) {
+/*switch (city) {
     case city1:
         CountryAlert(country1)
         break;
@@ -107,4 +107,4 @@ switch (sport) {
 
 function sportsmanAlert(sportsman) {  
     alert('Круто! Хочешь стать как ' + [sportsman]);
-}
+}*/
