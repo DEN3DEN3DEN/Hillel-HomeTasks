@@ -40,7 +40,7 @@ let sportsman3 = 'Ефим Конопля';
 if (yearOfBirth > 0) {
     console.log('Твой возраст - ' + [age] + '!');
 } else if (yearOfBirth === null) {
-    console.log('Жаль, что вы не захотели ввести свой возрвст!');
+    console.log('Жаль, что вы не захотели ввести свой год рождения!');
 }
 
 switch (city) {
