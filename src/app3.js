@@ -18,7 +18,8 @@
 
 
 let yearOfBirth = Number(prompt('Введите год своего рождения','....'));
-let age = parseInt(2022 - yearOfBirth);
+let year = Number(2022);
+let age = parseInt(year - [yearOfBirth]);
 
 let city = prompt('Введите город в котором живете','....');
 let city1 = 'Киев';
@@ -38,21 +39,21 @@ let sportsman3 = 'Ефимом Коноплей';
 
 
 if (yearOfBirth > 0) {
-    alert ('Тебе ' + [age]);
-} else if (yearOfBirth === 0) {
-    alert ('Жаль, что вы не захотели ввести свой возрвст');
+    alert ('Тебе ' + [age] + '!');
+} else if (yearOfBirth === null) {
+    alert ('Жаль, что вы не захотели ввести свой возрвст!');
 }
 
 if (city === city1) {
-    alert('Ты живешь в столице ' + [country1]);
+    alert('Ты живешь в столице ' + [country1] + '!');
 } else if (city === city2) {
-    alert ('Ты живешь в столице ' + [country2]);
+    alert ('Ты живешь в столице ' + [country2] + '!');
 } else if (city === city3) {
-    alert ('Ты живешь в столице ' + [country3]);
-} else if (city) {
-    alert ('Ты живешь в городе ' + [city]);
+    alert ('Ты живешь в столице ' + [country3] + '!');
+} else if (city === null) {
+    alert ('Жаль, что вы не захотели ввести свой город!');
 } else {
-    alert ('Жаль, что вы не захотели ввести свой город');
+    alert ('Ты живешь в городе ' + [city] + '!');
 }
 
 if (sport === sport1) {
@@ -61,9 +62,13 @@ if (sport === sport1) {
     alert ('Круто! Хочешь стать ' + [sportsman2] + ' ?');
 } else if (sport === sport3) {
     alert ('Круто! Хочешь стать ' + [sportsman3] + ' ?');
-} else if (sport) {
-    alert ('Твой любимый спорт ' + [sport]);
+} else if (sport === null) {
+    alert ('Жаль, что вы не захотели ввести свой любимый вид спорта!');
 } else {
-    alert ('Жаль, что вы не захотели ввести свой любимый вид спорта');
+    alert ('Твой любимый вид спорта ' + [sport] + '!');
 }
 
+let ageStr = 'Тебе ' + [age] + '!';
+let cityStr = 'Ты живешь в городе ' + [city] + '!';
+let sportStr = 'Твой любимый вид спорта ' + [sport] + '!';
+alert(ageStr +' '+ cityStr +' '+ sportStr);
