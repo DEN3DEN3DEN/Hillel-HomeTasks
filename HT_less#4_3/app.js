@@ -78,11 +78,11 @@ console.log(`
 `);
 
 for (let i = 0; i < arr.length; i++) {
-  if (arr[i] > max) {
-    max = arr[i];
+  if (val > max) {
+    max = val;
   }
-  if (arr[i] !== max) {
-    arr[i] = 0;
+  if (val !== max) {
+    val = 0;
   }
 }
 
