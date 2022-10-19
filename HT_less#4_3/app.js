@@ -78,13 +78,12 @@ console.log(`
 `);
 
 for (let i = 0; i < arr.length; i++) {
-  const val = arr[i];
-  if (val > max) {
-    max = val;
-  }
-  if (val !== max) {
-    val = 0;
-  }
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+    if (arr[i] !== max) {
+      arr[i] = 0;
+    }
 }
 
 console.log(arr);
