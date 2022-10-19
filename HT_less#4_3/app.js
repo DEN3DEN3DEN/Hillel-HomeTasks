@@ -78,6 +78,7 @@ console.log(`
 `);
 
 for (let i = 0; i < arr.length; i++) {
+  const val = arr[i];
   if (val > max) {
     max = val;
   }
