@@ -71,8 +71,10 @@ function shop() {
     showProducts();
     getProductNumber();
     getAmount();
-    calculatePrice();
-    calculateDiscount();
+    let price = calculatePrice();
+    if (price) {
+      calculateDiscount();
+    }  
 }
 shop();
 
