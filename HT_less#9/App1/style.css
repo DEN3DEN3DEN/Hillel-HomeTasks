@@ -1,0 +1,8 @@
+.instruction {
+    display: none;
+}
+.show_instruction {
+    display: block;
+    background-color: rgb(174, 208, 174);
+    font-weight: bold;
+}
