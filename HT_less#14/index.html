@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "css/style.css">
+    <title>Shop</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="category"></div>
+        <div class="products"></div>
+        <div class="details"></div>
+    </div>
+    <div class="result"></div>
+
+    <form name="inputForm" class="form">
+        <p>
+            <label>Enter your first name <input id="userName" name="name" type="text"><span></span></label>
+        </p>
+        <p>
+            <label>Enter your patronymic <input name="patronymic" type="text"><span></span></label>
+        </p>
+        <p>
+            <label>Enter your last name <input name="surname" type="text"><span></span></label>
+        </p>
+        <p>Choose your city:
+            <select name="city">
+                <option value="...">...</option>
+                <option value="Harkiv">Harkiv</option>
+                <option value="Odessa">Odessa</option>
+                <option value="Chop">Chop</option>
+                <option value="Kiev">Kiev</option>
+                <option value="Struy">Struy</option>
+            </select>
+            <span></span>
+        </p>
+        <p>Chose a branch of 'Nova pochta':
+            <select name="warehouse">
+                <option value="...">...</option>
+                <option value="142">142</option>
+                <option value="35">35</option>
+                <option value="45">45</option>
+                <option value="80">80</option>
+                <option value="36">36</option>
+                <option value="3">3</option>
+            </select>
+            <span></span>
+        </p>
+        <p>Payment options:<br>
+            <label><input type="radio" name="payMetod" value="card">by card</label>
+            <label><input type="radio" name="payMetod" value="on_delivery">cash on delivery</label>
+            <span></span>
+        </p>
+        <p>How many would you like to byu?<br>
+            <input type="number" name="amount" min="1" value="1"><span></span>
+        </p>
+        <p>Would you like to add a coment? <br>
+            <textarea name="coment" cols="50" rows="10" placeholder="ente your coment"></textarea>
+            <span></span>
+        </p>
+        <input type="button" value="buy it now" class="validateBtn"/>
+    </form>
+
+    <div class="order-information">
+        <ol>
+        </ol>
+        <input type="button" value="Make more purchases" class="buy_more">
+    </div>
+
+    <div class="attention"></div>
+
+    <input type="button" value="My orders" class="my_orders">
+    <input type="button" value="Back to the store" class="back">
+
+    <div class="order_card"></div>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/validateForm.js"></script>
+    <script src="js/order.js"></script>
+    
+</body>
+</html>
