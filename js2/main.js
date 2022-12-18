@@ -50,7 +50,7 @@ const saveClient = () => {
         password: document.getElementById('password').value,
         age: document.getElementById('age').value,
         email: document.getElementById('email').value,
-        phoneNumber: document.getElementById('phone').value,
+        phone: document.getElementById('phone').value,
         bankCard: document.getElementById('bankCard').value
     }
     const index = document.getElementById('name').dataset.index ;
@@ -96,11 +96,11 @@ const updateTable = () => {
 
 const fillFields = (client) => {
     document.getElementById('name').value = client.name;
-    document.getElementById('password').value = client.phone;
-    document.getElementById('age').value = client.email;
-    document.getElementById('email').value = client.city;
-    document.getElementById('phone').value = client.email;
-    document.getElementById('bankCard').value = client.city;
+    document.getElementById('password').value = client.password;
+    document.getElementById('age').value = client.age;
+    document.getElementById('email').value = client.email;
+    document.getElementById('phone').value = client.phone;
+    document.getElementById('bankCard').value = client.bankCard;
     document.getElementById('name').dataset.index = client.index;
 }
 
