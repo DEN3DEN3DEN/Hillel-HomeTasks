@@ -78,9 +78,3 @@ console.log("Price without cheese:" + hamburger.calculatePrice());
 
 
 hamburger.removeTopping(Hamburger.TOPPING_MAYONEZ);
-
-hamburger.addTopping(Hamburger.SIZE_BIG);
-hamburger.addTopping(Hamburger.SIZE_SMALL);
-
-
-
