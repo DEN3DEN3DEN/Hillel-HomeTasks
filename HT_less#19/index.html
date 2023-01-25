@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./dist/main.css">
+    <link rel="stylesheet" href="./dist/button.css">
+    <link rel="stylesheet" href="./dist/records.css">
+    <link rel="stylesheet" href="./dist/modal.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header-title">Client List</h1>
+    </header>
+
+    <main>
+        <button type="button" class="button blue mobile" id="registerClients"> Add Client</button>
+
+        <table class="records" id="tableClient">
+            <thead>
+                <tr>
+                <th>Name</th>
+                <th>Password</th>
+                <th>Age</th>
+                <th>E-mail</th>
+                <th>Phone</th>
+                <th>BankCard</th>
+                <th>Options</th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>New Client</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+
+                <form class="modal-form" id="form">
+                    <input type="text" name="name" class="modal-field" id="name" data-index="new" placeholder="Client Name" required>
+                    <input type="password" name="pass" class="modal-field" id="password" placeholder="Enter your password" required>
+                    <input type="number" name="age" class="modal-field" id="age" placeholder="Age" required>
+                    <input type="email" name="email" class="modal-field" id="email" placeholder="E-mail" required>
+                    <input type="tel" name="phone" class="modal-field" id="phone" placeholder="Phone: +38(050)111-11-11" required>
+                    <input type="number" name="card" class="modal-field" id="bankCard" placeholder="Credit Card" required>
+                </form>
+
+                <footer class="modal-footer">
+                    <button class="button green" id="save">Save</button>
+                    <button class="button blue" id="cancel">Cancel</button>
+                </footer>
+            </div>
+        </div>
+
+        <div class="modal" id="modalConfirm">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Delete record</h2>
+                    <span class="modal-close" id="modalConfirmClose">&#10006;</span>
+                </header>
+
+                <section class="modal-text">
+                    <h3>Delete this record permanently?</h3>
+                </section>
+
+                <footer class="modal-footer">
+                    <button class="button green" id="excludeConfirm">Delete</button>
+                    <button class="button blue" id="cancelConfirm">Cancel</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+
+    <script src="dist/result.js"></script>
+    
+    
+</body>
+</html>
