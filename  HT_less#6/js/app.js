@@ -34,6 +34,7 @@ function showProducts() {
   }
 }
 
+
 function getProductNumber() {
     let productNumber;
     do {
@@ -52,12 +53,15 @@ function getAmount() {
     return amount;
 }
 
-function calculatePriceAndDiscount() {
+function calculatePrice() {
     const finalPrice = getProductNumber().price * getAmount();
     console.log('The price is $' + finalPrice);
+    return finalPrice;
+}
 
-    if (finalPrice * EXCHANGE > DISCOUNT_STARTS_FROM) {
-    const superFinalPrice = finalPrice - finalPrice * DISCOUNT;
+function calculateDiscount() {
+    if (calculatePrice() * EXCHANGE > DISCOUNT_STARTS_FROM) {
+    const superFinalPrice = calculatePrice() - (calculatePrice() * DISCOUNT);
     console.log(`Congrats! You got discount ${DISCOUNT_STR}%:`);
     console.log('Please pay $' + superFinalPrice);
     }
@@ -65,7 +69,12 @@ function calculatePriceAndDiscount() {
 
 function shop() {
     showProducts();
-    calculatePriceAndDiscount();
+    getProductNumber();
+    getAmount();
+    let price = calculatePrice();
+    if (price) {
+        calculateDiscount();
+    }
 }
 shop();
 
